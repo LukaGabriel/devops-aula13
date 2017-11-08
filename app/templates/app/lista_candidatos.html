@@ -8,8 +8,9 @@
 
 <table class="table">
     <tr><th>Nome do candidato</th><th>Período</th><th>Faculdade</th></tr>
-        {% for curso in cursos %}
-          <tr><td>{{ curso.nome }}</td><td>{{ curso.periodo }}</td><td>{{ curso.instituicao }}</td></tr>
+        {% for candidato in candidatos %}
+          <tr><td>{{ candidato.nome }}</td><td>{{ candidato.rg }}</td><td>{{ curso.cpf }}</td><td>{{ curso.endereço }}</td>
+    <td>{{ curso.telefone }}</td></tr>
         {% endfor %}
 </table>
 
