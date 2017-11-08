@@ -12,4 +12,11 @@ class Curso(models.Model):
 
 class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
+    
+Class Candidato(models.Model):
+       nome = models.CharField(max_lenght=200)
+        rg = models.IntegerField
+        cpf = models.IntegerField
+        endereço = models.CharField(max_length=300)
+        telefone = models.CharField(max_lenght=15)
 
