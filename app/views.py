@@ -85,6 +85,8 @@ def lista_candidatos(request):
             'title':'Cadastro de candidatos',
             'candidatos': Candidato.objects.all(),
             'year':datetime.now().year,
+                 })
+    )
 
 def lista_locais_prova(request):
     assert isinstance(request, httpRequest)
@@ -96,3 +98,5 @@ def lista_locais_prova(request):
             'title':'Locais de Prova',
             'candidatos': Local_Prova.objects.all(),
             'year':datetime.now().year,
+                 })
+    )
